@@ -1,6 +1,6 @@
 pipeline {
 
-    env.AWS_ECR_LOGIN=false
+    env.AWS_ECR_LOGIN=true
     def newApp
     def registry = 'karimamch/dockerjenkins'
     def registryCredential = 'karimamch'
