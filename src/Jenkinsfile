@@ -11,7 +11,7 @@ node {
 
         stage('build') {
                
-                sh 'apt-get install python3-pip'
+               
                 sh 'pip install Flask'
             
         }
