@@ -20,7 +20,7 @@ node {
         
         stage('test') {
            
-                sh 'python app.py'
+                sh 'python src/app.py'
             
         }
 
