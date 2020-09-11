@@ -13,7 +13,7 @@ node {
                
                 sh 'python --version'
 		
-                sh 'echo $PATH; pip install Flask'
+                sh 'python -m pip install Flask'
 	}   
         
         stage('test') {
