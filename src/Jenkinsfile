@@ -1,4 +1,4 @@
-pipeline {
+node {
 
     env.AWS_ECR_LOGIN=true
     def newApp
@@ -6,7 +6,7 @@ pipeline {
     def registryCredential = 'karimamch'
 
     agent { docker { image 'python:3.6.1-alpine' } }
-    stages {
+    
 
 
         stage('Git') {
@@ -46,5 +46,5 @@ pipeline {
 
 
 
-    }
+    
 }
