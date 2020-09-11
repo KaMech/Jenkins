@@ -11,7 +11,11 @@ node {
 	        }
        
         stage('build') {
-		
+	agent {
+          docker {
+               image 'qnib/pytest'
+          }
+          }
                
                 sh 'python --version'
                 sh 'pip install Flask'
