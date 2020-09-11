@@ -5,10 +5,6 @@ node {
     def registry = 'karimamch/dockerjenkins'
     def registryCredential = 'karimamch'
 
-    agent { docker { image 'python:3.6.1-alpine' } }
-    
-
-
         stage('Git') {
 		git 'https://github.com/KaMech/Jenkins.git'
 	        }
