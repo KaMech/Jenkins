@@ -13,7 +13,7 @@ node {
                
                 sh 'python --version'
 		
-		sh 'apt-get install python-virtualenv'
+		
      
                 sh 'pip install Flask'
 	}   
