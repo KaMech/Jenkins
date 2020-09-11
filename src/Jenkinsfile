@@ -10,14 +10,14 @@ node {
 	        }
 
         stage('build') {
-            steps {
+           
                 sh 'pip install Flask'
-            }
+            
         }
         stage('test') {
-            steps {
+           
                 sh 'python app.py'
-            }
+            
         }
 
         stage('Building image') {
