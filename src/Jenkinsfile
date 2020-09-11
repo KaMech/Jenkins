@@ -16,7 +16,7 @@ node {
 		sh '. venv/bin/activate'
                 sh 'pip install Flask'
             
-        '
+        
         stage('test') {
            
                 sh 'python app.py'
