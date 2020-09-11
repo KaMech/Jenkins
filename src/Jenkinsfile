@@ -12,9 +12,11 @@ node {
         stage('build') {
                
                 sh 'python --version'
-                sh '/usr/local/bin/pip install Flask'
+		sh 'virtualenv venv --distribute'
+		sh '. venv/bin/activate'
+                sh 'pip install Flask'
             
-        }
+        '
         stage('test') {
            
                 sh 'python app.py'
