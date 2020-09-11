@@ -13,7 +13,7 @@ node {
                
                 sh 'python --version'
 		
-		sh 'virtualenv venv && export PATH=${VIRTUAL_ENV}/bin:${PATH} & pip install --upgrade pip'
+		sh 'apt-get install python-virtualenv'
      
                 sh 'pip install Flask'
 	}   
