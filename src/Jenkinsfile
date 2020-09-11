@@ -11,7 +11,7 @@ node {
 
         stage('build') {
            
-                sh 'pip install Flask'
+                sh 'pip3 install Flask'
             
         }
         stage('test') {
