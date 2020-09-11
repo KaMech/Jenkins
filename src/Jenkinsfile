@@ -10,8 +10,8 @@ node {
 	        }
 
         stage('build') {
-                sh 'virtualenv venv --distribute'
-                sh 'source venv/bin/activate'
+               
+                sh 'apt-get install python3-pip'
                 sh 'pip install Flask'
             
         }
