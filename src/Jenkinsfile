@@ -13,7 +13,7 @@ node {
         stage('build') {
 	
                 sh 'python --version'
-	withPythonEnv('CPython-2.7'){	
+	withPythonEnv('python'){	
                 sh 'pip install Flask'
 	}
 	}   
