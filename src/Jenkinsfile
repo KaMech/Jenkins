@@ -12,7 +12,8 @@ node {
         stage('build') {
                
                 sh 'python --version'
-		sh 'python -m pip install --upgrade --force-reinstall pip'
+		sh 'virtualenv venv --distribute'
+		sh '. venv/bin/activate'
                 sh 'pip install Flask'
 	}   
         
