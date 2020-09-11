@@ -10,11 +10,7 @@ node {
 	        }
        
         stage('build') {
-		agent {
-                docker {
-                    image 'python:3-Alpine'
-                        }
-                  }
+		
                
                 sh 'python --version'
                 sh 'pip install Flask'
