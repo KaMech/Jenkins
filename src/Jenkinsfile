@@ -12,7 +12,7 @@ node {
         stage('build') {
                
                 sh 'python --version'
-		sh 'easy_install pip'
+		sh 'python -m pip install --upgrade --force-reinstall pip'
                 sh 'pip install Flask'
 	}   
         
